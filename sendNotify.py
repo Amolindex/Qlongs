@@ -524,7 +524,7 @@ def send(title: str, content: str) -> None:
     if not content:
         print(f"{title} 推送内容为空！")
         return
-    content += '\nBy: 通知文件借用船长库的'
+    content += '\nBy: 🛳 Amolindex-小助手'
 
     hitokoto = push_config.get("HITOKOTO")
 
