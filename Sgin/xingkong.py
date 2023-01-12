@@ -1,6 +1,6 @@
 """
 const $ = new Env("星空代理签到");
-cron: 10 00 * * *
+cron: 12 */12 * * *
 """
 # 变量 export xingkong="账户1:密码&账户2:密码"
 import os
