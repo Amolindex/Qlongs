@@ -1,7 +1,7 @@
 /*
 [task_local]
 #机场签到
-cron:20 */8 * * *
+cron:20 0/8 * * *
 const $ = new Env("airportSgin");
 机场签到
 多账号@隔开
