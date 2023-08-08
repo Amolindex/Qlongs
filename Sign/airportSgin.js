@@ -1,8 +1,7 @@
 /*
 [task_local]
 #机场签到
-cron:22 2-22/4 * * *
-const $ = new Env("airportSgin");
+0 7 * * * , tag=机场签到, enabled=true
 机场签到
 多账号@隔开
 格式：token
@@ -73,7 +72,7 @@ async function main() {
 // Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
 // Cookie:
 //
-// {"token":"glados.network"}
+// {"token":"glados.one"}
 async function sign(cookie){
     return new Promise(resolve => {
         try {
@@ -88,7 +87,7 @@ async function sign(cookie){
                         "Cookie": cookie,
 
                     },
-                    "body": '{"token":"glados.network"}'
+                    "body": '{"token":"glados.one"}'
                 },
                 function (error, response, body) {
                     console.log(body);
